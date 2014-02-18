@@ -1,6 +1,6 @@
 # ![](https://gravatar.com/avatar/11d3bc4c3163e3d238d558d5c9d98efe?s=64) aptible/ruby
 
-All Ruby versions, on top of Ubuntu 12.04.
+All Ruby versions, on top of Ubuntu 12.10.
 
 ## Installation and Usage
 
@@ -14,13 +14,13 @@ All Ruby versions, on top of Ubuntu 12.04.
 
 ## Tests
 
-To run a simple integration test of the Dockerfile:
+Tests are run as part of the `Dockerfile` build. To execute them separately within a container, run:
 
-    make test
+    bats test
 
 ## Deployment
 
-To push the Docker image to Quay, run the following command. It will run (and confirm successful completion) of integration tests before pushing to the remote repository.
+To push the Docker image to Quay, run the following command:
 
     make release
 

@@ -11,8 +11,5 @@ release: test build
 	docker login -u '$$token' -p $$QUAY_TOKEN -e docker@aptible.com quay.io
 	docker push quay.io/aptible/ruby
 
-test: build
-	bats test
-
 build:
 	docker build -t quay.io/aptible/ruby:$(TAG) .
