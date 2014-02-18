@@ -1,6 +1,6 @@
 # ![](https://gravatar.com/avatar/11d3bc4c3163e3d238d558d5c9d98efe?s=64) aptible/ruby
 
-Ruby images for Docker-based Aptible services.
+All Ruby versions, on top of Ubuntu 12.04.
 
 ## Installation and Usage
 
