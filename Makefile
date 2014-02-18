@@ -8,7 +8,7 @@ endif
 all: release
 
 release: test build
-	docker login -u '$$token' -p $$QUAY_TOKEN -e docker@aptible.com quay.io
+	docker login -u aptible+build -p $$QUAY_TOKEN -e docker@aptible.com quay.io
 	docker push quay.io/aptible/ruby
 
 build:
