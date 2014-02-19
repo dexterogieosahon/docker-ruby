@@ -9,6 +9,8 @@ RUN cd /tmp && \
 RUN cd /tmp/ruby-2.0.0-p353 && ./configure --enable-shared --prefix=/usr && \
     make && make install
 
+RUN gem install bundler
+
 ADD test /tmp/test
 RUN bats /tmp/test
 

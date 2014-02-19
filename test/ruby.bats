@@ -7,3 +7,7 @@
 @test "It should execute Ruby code" {
   ruby -e "puts 'Hello'" | grep Hello
 }
+
+@test "It should install Bundler" {
+  which bundler
+}
