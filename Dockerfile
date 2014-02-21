@@ -5,7 +5,7 @@ RUN apt-get -y install wget build-essential zlib1g-dev libssl-dev \
     wget -q http://cache.ruby-lang.org/pub/ruby/ruby-2.0.0-p353.tar.gz && \
     tar xzf ruby-2.0.0-p353.tar.gz && \
     cd ruby-2.0.0-p353 && ./configure --enable-shared --prefix=/usr && \
-    make && make install
+    make && make install && cd .. && rm -rf ruby-2.0.0-p353*
 RUN gem install bundler
 
 ADD test /tmp/test
