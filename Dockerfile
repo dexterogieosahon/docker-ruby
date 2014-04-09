@@ -1,4 +1,4 @@
-FROM quay.io/aptible/ubuntu:12.10
+FROM quay.io/aptible/ubuntu:12.04
 
 RUN apt-get -y install wget build-essential zlib1g-dev libssl-dev \
     libreadline6-dev libyaml-dev && cd /tmp && \

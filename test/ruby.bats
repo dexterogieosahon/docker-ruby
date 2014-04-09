@@ -11,3 +11,13 @@
 @test "It should install Bundler" {
   which bundler
 }
+
+@test "It should be protected against CVE-2014-2525" {
+  skip  # Ubuntu has backported the fix to libyaml 0.1.4
+  ruby -rpsych -e 'p Psych.libyaml_version[2] > 5' | grep true
+}
+
+@test "It should be protected against CVE-2014-2525" {
+  run dpkg -s libyaml-dev
+  [[ "$output" =~ "0.1.4-2ubuntu0.12.04.3" ]]
+}

@@ -1,6 +1,8 @@
 # ![](https://gravatar.com/avatar/11d3bc4c3163e3d238d558d5c9d98efe?s=64) aptible/ruby
 
-All Ruby versions, on top of Ubuntu 12.10.
+[![Docker Repository on Quay.io](https://quay.io/repository/aptible/ruby/status)](https://quay.io/repository/aptible/ruby)
+
+The Ruby programming language, on Docker.
 
 ## Installation and Usage
 
