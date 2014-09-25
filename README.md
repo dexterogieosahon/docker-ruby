@@ -14,7 +14,6 @@ The Ruby programming language, on Docker.
 * `latest`: Currently Ruby 2.1.2
 * `ruby-1.9.3`: Ruby 1.9.3-p545
 * `ruby-2.0.0`: Ruby 2.0.0-p353
-* `ruby-2.1.1`: Ruby 2.1.1 *(deprecated)*
 * `ruby-2.1`: Ruby 2.1.2
 
 ## Tests
