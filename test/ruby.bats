@@ -1,7 +1,7 @@
 #!/usr/bin/env bats
 
-@test "It should use Ruby 2.1.4" {
-  ruby -v | grep 2.1.4
+@test "It should use Ruby 2.1.5" {
+  ruby -v | grep 2.1.5
 }
 
 @test "It should execute Ruby code" {
